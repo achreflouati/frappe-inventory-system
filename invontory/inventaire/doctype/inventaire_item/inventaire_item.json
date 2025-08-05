@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-22 15:38:27.460210",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parent1",
+  "item_code",
+  "stock_reel",
+  "compte",
+  "ecart"
+ ],
+ "fields": [
+  {
+   "fieldname": "parent1",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "parent",
+   "options": "Inventaire NE"
+  },
+  {
+   "columns": 2,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "item_code",
+   "options": "Item"
+  },
+  {
+   "columns": 2,
+   "fieldname": "stock_reel",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "stock_reel"
+  },
+  {
+   "columns": 2,
+   "fieldname": "compte",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "compte"
+  },
+  {
+   "columns": 2,
+   "fieldname": "ecart",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "ecart"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-22 15:43:18.434331",
+ "modified_by": "Administrator",
+ "module": "inventaire",
+ "name": "Inventaire Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

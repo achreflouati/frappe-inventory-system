@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-22 15:34:43.284802",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tgsf",
+  "amended_from",
+  "ref_inventaire",
+  "date_ouverture",
+  "depot",
+  "statut",
+  "section_break_ijas",
+  "inventaire_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tgsf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Inventaire NE",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "ref_inventaire",
+   "fieldtype": "Data",
+   "label": "ref_inventaire",
+   "unique": 1
+  },
+  {
+   "fieldname": "date_ouverture",
+   "fieldtype": "Date",
+   "label": "date_ouverture"
+  },
+  {
+   "fieldname": "depot",
+   "fieldtype": "Link",
+   "label": "depot",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "statut",
+   "fieldtype": "Select",
+   "label": "statut",
+   "options": "Ouvert\nCl\u00f4tur\u00e9"
+  },
+  {
+   "fieldname": "section_break_ijas",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inventaire_item",
+   "fieldtype": "Table",
+   "label": "Inventaire Item",
+   "options": "Inventaire Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-22 15:43:46.362125",
+ "modified_by": "Administrator",
+ "module": "inventaire",
+ "name": "Inventaire NE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
